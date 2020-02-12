@@ -1,0 +1,14 @@
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\bin\Debug\WpfApp_maccarinelli_fernandez.exe.config
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\bin\Debug\WpfApp_maccarinelli_fernandez.exe
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\bin\Debug\WpfApp_maccarinelli_fernandez.pdb
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez.csprojAssemblyReference.cache
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\MainWindow.g.cs
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\App.g.cs
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez_MarkupCompile.cache
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez_MarkupCompile.lref
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\MainWindow.baml
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez.g.resources
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez.Properties.Resources.resources
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez.csproj.GenerateResource.cache
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez.exe
+C:\Users\Perfection\source\repos\WpfApp_maccarinelli_fernandez\obj\Debug\WpfApp_maccarinelli_fernandez.pdb

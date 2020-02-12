@@ -1,0 +1,11 @@
+C:\Users\Perfection\source\repos\exo1\bin\Debug\netcoreapp3.1\exo1.exe
+C:\Users\Perfection\source\repos\exo1\bin\Debug\netcoreapp3.1\exo1.deps.json
+C:\Users\Perfection\source\repos\exo1\bin\Debug\netcoreapp3.1\exo1.runtimeconfig.json
+C:\Users\Perfection\source\repos\exo1\bin\Debug\netcoreapp3.1\exo1.runtimeconfig.dev.json
+C:\Users\Perfection\source\repos\exo1\bin\Debug\netcoreapp3.1\exo1.dll
+C:\Users\Perfection\source\repos\exo1\bin\Debug\netcoreapp3.1\exo1.pdb
+C:\Users\Perfection\source\repos\exo1\obj\Debug\netcoreapp3.1\exo1.csprojAssemblyReference.cache
+C:\Users\Perfection\source\repos\exo1\obj\Debug\netcoreapp3.1\exo1.AssemblyInfoInputs.cache
+C:\Users\Perfection\source\repos\exo1\obj\Debug\netcoreapp3.1\exo1.AssemblyInfo.cs
+C:\Users\Perfection\source\repos\exo1\obj\Debug\netcoreapp3.1\exo1.dll
+C:\Users\Perfection\source\repos\exo1\obj\Debug\netcoreapp3.1\exo1.pdb
