@@ -7,6 +7,7 @@ namespace exo1
     public class GestionnaireChemin
     {
         List<Ville> villesInChemin;
+        Population populationActuelle;
 
         public GestionnaireChemin(List<Ville> lesVilles) {
             this.villesInChemin = lesVilles;

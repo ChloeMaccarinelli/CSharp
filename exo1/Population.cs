@@ -58,7 +58,6 @@ namespace exo1
                         meilleurCheminARenvoyer = this.lesCheminsRetenus[i];
                     }
                 }
-
                 return meilleurCheminARenvoyer;
             } catch(Exception e)
             {

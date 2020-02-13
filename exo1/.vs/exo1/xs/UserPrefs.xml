@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{14C1B8F4-31BE-4615-B55B-2453978183F5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GestionnaireChemin.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="GestionnaireChemin.cs" Line="1" Column="1" />
+      <File FileName="Chemin.cs" Line="21" Column="1" />
+      <File FileName="Ville.cs" Line="1" Column="1" />
+      <File FileName="Population.cs" Line="21" Column="32" />
+      <File FileName="Algorithme.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="exo1" expanded="True">
+            <Node name="exo1" expanded="True">
+              <Node name="GestionnaireChemin.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.exo1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

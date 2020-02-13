@@ -21,8 +21,9 @@ namespace exo1
 
         public Population evoluerPopulation(Population pop)
         {
-            Population nouvellePopulation = new Population(pop.getTaillePopulation(), gc);
+            Population nouvellePopulation = new Population(pop.getTaillePopulation(), new GestionnaireChemin());
             int elitismeOffset = 0;
+
 
             if (this.elitisme)
             {

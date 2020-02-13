@@ -11,7 +11,7 @@ namespace exo1
 	class Program
 	{
 		static int count = 0;
-		const int NBGENERATION = 100;
+		const int NBGENERATION = 10000;
 		const int NBPOPULATION = 22;
 
 		static void Main(string[] args)
