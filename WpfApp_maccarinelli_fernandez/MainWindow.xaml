@@ -33,7 +33,7 @@
                 <DataGridTextColumn Header="Latitude" Width="80" Binding="{Binding Latititude}" />
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Width="180" Margin="1,0.4,10,0">
+        <DataGrid Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Width="180" Margin="1,0.4,10,0" SelectionChanged="DataGrid_SelectionChanged_1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Gén" Width="60" Binding="{Binding Gén}" />
                 <DataGridTextColumn Header="Moyenne" Width="60" Binding="{Binding Moyenne}" />
