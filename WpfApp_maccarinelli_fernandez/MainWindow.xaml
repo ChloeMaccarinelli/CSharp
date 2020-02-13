@@ -17,16 +17,28 @@
             </MenuItem>
             <MenuItem Header="_Paramètres"/>
         </Menu>
-        <TextBox AcceptsReturn="True" />
-        <Image Height="380" VerticalAlignment="Center" HorizontalAlignment="Left" Width="437" Margin="20,0.4,0,0" Source="carte-france-index.jpg" />
-        <DataGrid Name="datagrid" Height="360" VerticalAlignment="Center"  Width="160" Margin="0,21.4,150,21" SelectionChanged="DataGrid_SelectionChanged">
+        <Image Width="418" Margin="0,13.4,0,27" Source="carte-france-index.jpg" />
 
+        <DataGrid Name="datagrid" Height="340" VerticalAlignment="Center"  Width="160" Margin="5,21.4,5,41" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.38"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.193"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Longitude" Width="80" Binding="{Binding Longitude}" />
                 <DataGridTextColumn Header="Latitude" Width="80" Binding="{Binding Latititude}" />
             </DataGrid.Columns>
         </DataGrid>
+        <DataGrid Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Width="180" Margin="1,0.4,10,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Gén" Width="60" Binding="{Binding Gén}" />
+                <DataGridTextColumn Header="Moyenne" Width="60" Binding="{Binding Moyenne}" />
+                <DataGridTextColumn Header="Best" Width="60" Binding="{Binding Best}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </DockPanel>
-
-
 </Window>
