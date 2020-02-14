@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/SpyLeChaton/Documents/Visual Studio Projects/exo1/exo1.csproj": {}
+    "C:\\Users\\Perfection\\source\\repos\\exo1\\exo1.csproj": {}
   },
   "projects": {
-    "/Users/SpyLeChaton/Documents/Visual Studio Projects/exo1/exo1.csproj": {
+    "C:\\Users\\Perfection\\source\\repos\\exo1\\exo1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/SpyLeChaton/Documents/Visual Studio Projects/exo1/exo1.csproj",
+        "projectUniqueName": "C:\\Users\\Perfection\\source\\repos\\exo1\\exo1.csproj",
         "projectName": "exo1",
-        "projectPath": "/Users/SpyLeChaton/Documents/Visual Studio Projects/exo1/exo1.csproj",
-        "packagesPath": "/Users/SpyLeChaton/.nuget/packages/",
-        "outputPath": "/Users/SpyLeChaton/Documents/Visual Studio Projects/exo1/obj/",
+        "projectPath": "C:\\Users\\Perfection\\source\\repos\\exo1\\exo1.csproj",
+        "packagesPath": "C:\\Users\\Perfection\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Perfection\\source\\repos\\exo1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/SpyLeChaton/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Perfection\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
