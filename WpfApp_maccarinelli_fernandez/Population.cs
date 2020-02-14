@@ -69,6 +69,21 @@ namespace WpfApp_maccarinelli_fernandez
             return null;
         }
 
+        public double getMoyenne()
+        {
+            double moyenne = 0;
+            int i = 0;
+
+            for(i = 0; i < this.lesCheminsRetenus.Count; i++)
+            {
+                moyenne += this.lesCheminsRetenus[i].getDistance();
+            }
+
+            return moyenne / i;
+        }
+
+
+
 
     }
 }

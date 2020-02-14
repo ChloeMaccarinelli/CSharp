@@ -16,7 +16,7 @@ namespace WpfApp_maccarinelli_fernandez
         public GestionnaireChemin()
         {
             this.villesInChemin = new List<Ville>();
-
+            /**
             this.villesInChemin.Add(new Ville(3.002556, 45.846117, "Clermont-Ferrand"));
             this.villesInChemin.Add(new Ville(-0.644905, 44.896839, "Bordeaux"));
             this.villesInChemin.Add(new Ville(-1.380989, 43.470961, "Bayonne"));
@@ -38,7 +38,7 @@ namespace WpfApp_maccarinelli_fernandez
             this.villesInChemin.Add(new Ville(0.103163, 49.532415, "Le Havre"));
             this.villesInChemin.Add(new Ville(-1.495348, 49.667704, "Cherbourg"));
             this.villesInChemin.Add(new Ville(-4.494615, 48.447500, "Brest"));
-            this.villesInChemin.Add(new Ville(-0.457140, 46.373545, "Niort"));
+            this.villesInChemin.Add(new Ville(-0.457140, 46.373545, "Niort")); */
         }
 
         public List<Ville> getVilles()

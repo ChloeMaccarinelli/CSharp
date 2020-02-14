@@ -11,9 +11,8 @@ namespace WpfApp_maccarinelli_fernandez
 	class Program
 	{
 		static int count = 0;
-		const int NBGENERATION = 10000;
-		const int NBPOPULATION = 22;
 		GestionnaireChemin gc = new GestionnaireChemin();
+		List<Generation> lesGenerations = new List<Generation>();
 
 		public Program()
 		{
@@ -32,31 +31,45 @@ namespace WpfApp_maccarinelli_fernandez
 			return this.gc.getVilles();
 		}
 
+		
 
-		public static void linqTest()
+		public void execute(int nbPopulation, List<Ville> lesVilles)
 		{
-			GestionnaireChemin gc = new GestionnaireChemin();
+			GestionnaireChemin gc = new GestionnaireChemin(lesVilles);
 			Chemin chemin = new Chemin(gc);
 
 			Console.WriteLine("Evaluation du meilleur chemin, veuillez patienter ...");
 
 			// Initialisation de la population
-			Population pop = new Population(NBPOPULATION, gc);
+			Population pop = new Population(nbPopulation, gc);
 			//Console.WriteLine("Distance initiale = " + pop.getMeilleurChemin().getDistance());
 
 			// Evolution de la population sur 100 générations
 			Algorithme ga = new Algorithme(gc);
 			pop = ga.evoluerPopulation(pop);
-			for (int i = 0; i < NBGENERATION; i++)
+			for (int i = 0; i < nbPopulation; i++)
 			{
 				pop = ga.evoluerPopulation(pop);
 				Console.WriteLine("Gen " + i + " : " + pop.getMeilleurChemin().getDistance());
+				this.lesGenerations.Add(new Generation(i + 1, pop.getMoyenne() ,pop.getMeilleurChemin().getDistance()));
 			}
 
-			Console.WriteLine("Distance finale = " + pop.getMeilleurChemin().getDistance());
+			try
+			{
+				Console.WriteLine("Distance finale = " + pop.getMeilleurChemin().getDistance());
+			} catch (Exception e)
+			{
+				Console.WriteLine("Il faut au moins une itération !");
+			}
 
 			Chemin meilleurePopulation = pop.getMeilleurChemin();
 		}
+
+		public List<Generation> getGenerations()
+		{
+			return this.lesGenerations;
+		}
+
 	}
 }
 

@@ -13,13 +13,16 @@
             </MenuItem>
             <MenuItem Header="_Liste">
             </MenuItem>
-            <MenuItem Header="_Exécuter">
+            <MenuItem Header="_Exécuter" Click="Execute_Algorithme">
             </MenuItem>
-            <MenuItem Header="_Paramètres"/>
+            <TextBox Name="params" Width="100" Text = "{Binding nbPopulation}">
+            </TextBox> 
         </Menu>
-        <Image Width="418" Margin="0,13.4,0,27" Source="carte-france-index.jpg" />
+        <Canvas Name="mapCanvas" MouseLeftButtonDown="Image_MouseLeftButtonDown" Margin="0,-0.2,0,0">
+            <Image Width="418"  Source="carte-france-index.jpg" />
+        </Canvas>
 
-        <DataGrid Name="datagrid" Height="340" VerticalAlignment="Center"  Width="160" Margin="5,21.4,5,41" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.5,0.5">
+        <DataGrid Name="datagrid" Height="340" VerticalAlignment="Center"  Width="160" Margin="430,21.4,5,41" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.5,0.5" ItemsSource="{Binding lesVilles}">
             <DataGrid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,17 +31,9 @@
                     <TranslateTransform X="-1.193"/>
                 </TransformGroup>
             </DataGrid.RenderTransform>
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Longitude" Width="80" Binding="{Binding Longitude}" />
-                <DataGridTextColumn Header="Latitude" Width="80" Binding="{Binding Latititude}" />
-            </DataGrid.Columns>
         </DataGrid>
-        <DataGrid Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Width="180" Margin="1,0.4,10,0" SelectionChanged="DataGrid_SelectionChanged_1">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Gén" Width="60" Binding="{Binding Gén}" />
-                <DataGridTextColumn Header="Moyenne" Width="60" Binding="{Binding Moyenne}" />
-                <DataGridTextColumn Header="Best" Width="60" Binding="{Binding Best}" />
-            </DataGrid.Columns>
+        <DataGrid Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Width="180" Margin="1,0.4,10,0" SelectionChanged="DataGrid_SelectionChanged_1" ItemsSource="{Binding lesGenerations}">
+            
         </DataGrid>
     </DockPanel>
 </Window>
