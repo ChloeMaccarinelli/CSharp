@@ -27,10 +27,14 @@ namespace WpfApp_maccarinelli_fernandez
             Double DistanceY = 0.0;
             Double Distance = 0.0;
 
-            DistanceX = (Double)(villeDepart.Longitude) * 40000.0 * (Double)Math.Cos((villeDepart.Latitude + villeDarrivee.Latitude) * (Double)Math.PI / 360.0) / 360.0;
-            DistanceY = (Double)Math.Abs(villeDepart.Latitude - villeDarrivee.Latitude) * 40000.0 / 360.0;
+            // DistanceX = (Double)(villeDepart.Longitude) * 40000.0 * (Double)Math.Cos((villeDepart.Latitude + villeDarrivee.Latitude) * (Double)Math.PI / 360.0) / 360.0;
+            // DistanceY = (Double)Math.Abs(villeDepart.Latitude - villeDarrivee.Latitude) * 40000.0 / 360.0;
+            double xA = villeDepart.Latitude;
+            double yA = villeDepart.Longitude;
+            double xB = villeDarrivee.Latitude;
+            double yB = villeDarrivee.Longitude;
 
-            Distance = (Double)Math.Sqrt(Math.Abs((DistanceX) * (DistanceY) + ((DistanceY) * (DistanceX))));
+            Distance = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2));
 
             return Distance;
         }

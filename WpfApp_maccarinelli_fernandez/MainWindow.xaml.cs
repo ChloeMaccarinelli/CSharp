@@ -116,7 +116,7 @@ namespace WpfApp_maccarinelli_fernandez
             canvas.Children.Add(ellipse);
 
             this.NotifyPropertyChanged("mapImage");
-            string nomVille = "Ville" + this.lesVilles.Count + 1;
+            string nomVille = "Ville" + (this.lesVilles.Count + 1);
 
 
             SQLiteCommand sqlCommand = new SQLiteCommand(this.connection);

@@ -41,10 +41,10 @@ namespace WpfApp_maccarinelli_fernandez
 			Console.WriteLine("Evaluation du meilleur chemin, veuillez patienter ...");
 
 			// Initialisation de la population
-			Population pop = new Population(nbPopulation, gc);
+			Population pop = new Population(lesVilles.Count, gc);
 			//Console.WriteLine("Distance initiale = " + pop.getMeilleurChemin().getDistance());
 
-			// Evolution de la population sur 100 générations
+			// Evolution de la population sur n générations
 			Algorithme ga = new Algorithme(gc);
 			pop = ga.evoluerPopulation(pop);
 			for (int i = 0; i < nbPopulation; i++)
@@ -72,47 +72,6 @@ namespace WpfApp_maccarinelli_fernandez
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

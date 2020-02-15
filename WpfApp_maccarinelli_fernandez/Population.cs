@@ -14,7 +14,7 @@ namespace WpfApp_maccarinelli_fernandez
         {
             this.gc = gc;
             this.lesCheminsRetenus = new List<Chemin>();
-            for (int i = 0; i < taillePopulation; i++)
+            for(int i = 0; i < gc.nombreDeVilles(); i++)
             {
                 this.lesCheminsRetenus.Add(new Chemin(gc));
             }
@@ -66,7 +66,7 @@ namespace WpfApp_maccarinelli_fernandez
                 Console.WriteLine("Erreur dans le meilleur chemin a renvoyer !");
             }
 
-            return null;
+            return this.lesCheminsRetenus[0];
         }
 
         public double getMoyenne()

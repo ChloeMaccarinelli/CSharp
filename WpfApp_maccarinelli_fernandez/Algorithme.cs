@@ -21,15 +21,8 @@ namespace WpfApp_maccarinelli_fernandez
 
         public Population evoluerPopulation(Population pop)
         {
-            Population nouvellePopulation = new Population(pop.getTaillePopulation(), new GestionnaireChemin());
+            Population nouvellePopulation = new Population(pop.getTaillePopulation(), this.gc);
             int elitismeOffset = 0;
-
-
-            if (this.elitisme)
-            {
-                nouvellePopulation.sauvegarderCircuit(pop.getMeilleurChemin());
-                elitismeOffset = 1;
-            }
 
             // On effectue le tournoi
             for (int i = elitismeOffset; i < nouvellePopulation.getTaillePopulation(); i++)
@@ -40,10 +33,19 @@ namespace WpfApp_maccarinelli_fernandez
                 nouvellePopulation.sauvegarderCircuit(enfant);
             }
 
+
+            if (this.elitisme)
+            {
+                nouvellePopulation.sauvegarderCircuit(pop.getMeilleurChemin());
+                elitismeOffset = 1;
+            }
+
             // On fait muter les nouveux éléments !
             for (int i = elitismeOffset; i < nouvellePopulation.getTaillePopulation(); i++)
             {
-                this.muter(nouvellePopulation.getChemin(i));
+
+                // TODO : REGARDER ICI T KON ARNO
+                nouvellePopulation(i) = this.muter(nouvellePopulation.getChemin(i));
             }
 
             return nouvellePopulation;
@@ -93,7 +95,7 @@ namespace WpfApp_maccarinelli_fernandez
             return enfant;
         }
 
-        public void muter(Chemin cheminAMuter)
+        public Population muter(Chemin cheminAMuter)
         {
             Random rand = new Random();
 
@@ -116,7 +118,7 @@ namespace WpfApp_maccarinelli_fernandez
         {
             Population tournoi = new Population(this.tailleTournoi, this.gc);
             Random rand = new Random();
-            Chemin meilleurChemin;
+            Chemin meilleurChemin = new Chemin(this.gc);
 
             for (int i = 0; i < this.tailleTournoi; i++)
             {
